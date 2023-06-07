@@ -1,13 +1,11 @@
 pipeline {
-  agent {
-    docker { image 'node:16-alpine' }
-  }
-  stages {
-     stage('Build') {
-       steps {
-         sh 'mvn install'
-      }
+    agent docker {  image 'node:16-alpine' }
+    stages {
+       stage {
+           steps {
+               echo "welocme to Jenkins ipeline"
+           }
+       }
     }
-  }
 }
 
