@@ -2,7 +2,7 @@ pipeline {
     agent {
         docker {  image 'node:16-alpine' }
     stages {
-       stage {
+       stage("hello") {
            steps {
                echo "welocme to Jenkins ipeline"
            }
